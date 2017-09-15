@@ -22,3 +22,168 @@ select,
 textarea {
     max-width: 280px;
 }
+
+/* calculator css*/
+
+#background {
+  width: 300px;
+  height: 400px;
+  background: #000;
+  margin: 50px auto;
+  border: outset 10px #CCC;
+}
+
+button {
+  border: 0;
+  color: #fff;
+  border-style: outset;
+  border-width: 2px;
+}
+
+#calcResult {
+  display: block;
+  width: 230px;
+  height: 40px;
+  margin: 10px auto;
+  text-align: right;
+  border: 0;
+  background: #CCC;
+  color: #000;
+  padding-top: 10px;
+  font-size: 20px;
+  font-family: "Arial";
+  margin-left: 25px;
+  outline: none;
+  overflow: hidden;
+  letter-spacing: 4px;
+  position: relative;
+  top: 10px;
+}
+
+  #calcResult:hover {
+    cursor: text;
+  }
+
+#first-buttonRows {
+  margin-bottom: 20px;
+  position: relative;
+  top: 10px;
+}
+
+.buttonRows {
+  width: 300px;
+  margin-top: 10px;
+}
+
+#delete {
+  width: 168px;
+  height: 50px;
+  margin-left: 25px;
+  border-radius: 4px;
+}
+
+#btnZero {
+  width: 110px;
+  height: 50px;
+  margin-left: 25px;
+  border-radius: 4px;
+}
+
+.fall-back {
+  margin-left: 3px !important;
+}
+
+.align {
+  margin-left: 6px
+}
+
+.buttonStyle {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.equalStyle {
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  border-radius: 4px;
+}
+
+.first-child {
+  margin-left: 25px;
+}
+
+
+.numberBackground {
+  background: #000;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 3px solid #333;
+}
+
+  .numberBackground:active {
+    background: #000;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 5px 5px 5px #555;
+  }
+
+.opBackground {
+  background: #333;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 3px solid #555;
+}
+
+  .opBackground:active {
+    background: #333;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 4px 4px 4px #555;
+  }
+
+.deleteBackground {
+  background: #24b4de;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 3px solid #399cb9;
+}
+
+  .deleteBackground:active {
+    background: #24b4de;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 4px 4px 4px #399cb9;
+  }
+
+#btnEqual {
+  background: #17a928;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  outline: none;
+  border-bottom: 3px solid #1f7a29;
+}
+
+  #btnEqual:active {
+    background: #17a928;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 4px 4px 4px #1f7a29;
+  }

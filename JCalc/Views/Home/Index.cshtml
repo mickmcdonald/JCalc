@@ -1,31 +1,53 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿
+@{
+  ViewBag.Title = "Calculator";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<h2>JCalc</h2>
+
+<div id="background">
+  <!-- Main background -->
+
+  <div id="calcResult"></div>
+
+  <div id="main">
+    <div id="first-buttonRows">
+      <button class="deleteBackground" id="delete">CLR</button>
+      <button id="opAdd" value="+" class="buttonStyle opBackground value align operator">+</button>
+    </div>
+
+    <div class="buttonRows">
+      <button id="num7" value="7" class="buttonStyle numberBackground digit first-child">7</button>
+      <button id="num8" value="8" class="buttonStyle numberBackground digit">8</button>
+      <button id="num9" value="9" class="buttonStyle numberBackground digit">9</button>
+      <button id="opSubtract" value="-" class="buttonStyle opBackground operator">-</button>
+    </div>
+
+    <div class="buttonRows">
+      <button id="num4" value="4" class="buttonStyle numberBackground digit first-child">4</button>
+      <button id="num5" value="5" class="buttonStyle numberBackground digit">5</button>
+      <button id="num6" value="6" class="buttonStyle numberBackground digit">6</button>
+      <button id="opProduct" value="*" class="buttonStyle opBackground operator">x</button>
+    </div>
+
+    <div class="buttonRows">
+      <button id="num1" value="1" class="buttonStyle numberBackground digit first-child">1</button>
+      <button id="num2" value="2" class="buttonStyle numberBackground digit">2</button>
+      <button id="num3" value="3" class="buttonStyle numberBackground digit">3</button>
+      <button id="opDivide" value="/" class="buttonStyle opBackground operator">/</button>
+    </div>
+
+    <div class="buttonRows">
+      <button id="btnZero" value="0" class="numberBackground zero">0</button>
+      <button value="." class="buttonStyle numberBackground period fall-back">.</button>
+      <button value="=" id="btnEqual" class="equalStyle align">=</button>
+    </div>
+
+  </div>
+
 </div>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+
+@section Scripts {
+  @Scripts.Render("~/scripts/jcalc.js")
+}
